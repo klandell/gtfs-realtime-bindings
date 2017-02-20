@@ -1,17 +1,26 @@
 # How-To Update Bindings When gtfs-realtime.proto Changes
 
-When
-[gtfs-realtime.proto](https://developers.google.com/transit/gtfs-realtime/gtfs-realtime-proto)
-is updated, the various languages bindings must be regenerated, packaged, and
-deployed.
+Regenerate the language binding source from gtfs-realtime.proto.
 
-First step is to copy the latest version of `gtfs-realtime.proto` into project.
-Then, follow the instructions in each individual UPDATING.md file for each
-language type. 
+```
+npm run buildProto
+```
 
-* [.NET](dotnet/UPDATING.md)
-* [Java](java/UPDATING.md)
-* [JavaScript / Node.js](nodejs/UPDATING.md)
-* [PHP](php/UPDATING.md)
-* [Python](python/UPDATING.md)
-* [Ruby](ruby/UPDATING.md)
+You might need to optionally `npm install` to install the protobuf package
+before building the proto.
+
+Add the license header back to the generated source file.
+
+Test the generated code:
+
+```
+npm run test
+```
+
+Update the version number in `package.json`.
+
+Publish the package to NPM:
+
+```
+npm publish
+```

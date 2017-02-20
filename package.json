@@ -1,22 +1,23 @@
 {
     "author": "Google Inc.",
-    "name": "gtfs-realtime-bindings",
+    "name": "mta-gtfs-realtime-bindings",
     "description": "Javascript classes generated from the GTFS-realtime protocol buffer specification.",
     "tags": [
-        "gtfs-realtime"
+        "gtfs-realtime",
+        "mta"
     ],
     "version": "0.0.4",
     "repository": {
         "type": "git",
-        "url": "https://github.com/google/gtfs-realtime-bindings.git"
+        "url": "https://github.com/google/mta-gtfs-realtime-bindings.git"
     },
     "bugs": {
-        "url": "https://github.com/google/gtfs-realtime-bindings/issues"
+        "url": "https://github.com/google/mta-gtfs-realtime-bindings/issues"
     },
-    "main": "gtfs-realtime.js",
+    "main": "mta-gtfs-realtime.js",
     "scripts": {
         "test": "mocha test/*.js",
-        "buildProto": "node_modules/protobufjs/bin/proto2js ../gtfs-realtime.proto -commonjs > gtfs-realtime.js"
+        "buildProto": "node_modules/protobufjs/bin/proto2js ./proto/nyct-subway.proto -commonjs > mta-gtfs-realtime.js"
     },
     "engines": [
         "node >= 0.10.0"
