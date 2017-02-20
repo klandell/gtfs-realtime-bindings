@@ -1,5 +1,5 @@
 {
-    "author": "Google Inc.",
+    "author": "Google Inc. -> Forked by Kyle Landell",
     "name": "mta-gtfs-realtime-bindings",
     "description": "Javascript classes generated from the GTFS-realtime protocol buffer specification.",
     "tags": [
@@ -9,10 +9,10 @@
     "version": "0.0.4",
     "repository": {
         "type": "git",
-        "url": "https://github.com/google/mta-gtfs-realtime-bindings.git"
+        "url": "https://github.com/klandell/mta-gtfs-realtime-bindings.git"
     },
     "bugs": {
-        "url": "https://github.com/google/mta-gtfs-realtime-bindings/issues"
+        "url": "https://github.com/klandell/mta-gtfs-realtime-bindings/issues"
     },
     "main": "mta-gtfs-realtime.js",
     "scripts": {
