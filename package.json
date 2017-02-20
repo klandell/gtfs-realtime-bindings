@@ -1,38 +1,38 @@
 {
-    "author": "Google Inc. -> Forked by Kyle Landell",
-    "name": "mta-gtfs-realtime-bindings",
-    "description": "Javascript classes generated from the GTFS-realtime protocol buffer specification.",
-    "tags": [
-        "gtfs-realtime",
-        "mta"
-    ],
-    "version": "0.0.4",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/klandell/mta-gtfs-realtime-bindings.git"
-    },
-    "bugs": {
-        "url": "https://github.com/klandell/mta-gtfs-realtime-bindings/issues"
-    },
-    "main": "mta-gtfs-realtime.js",
-    "scripts": {
-        "test": "mocha test/*.js",
-        "buildProto": "node_modules/protobufjs/bin/proto2js ./proto/nyct-subway.proto -commonjs > mta-gtfs-realtime.js"
-    },
-    "engines": [
-        "node >= 0.10.0"
-    ],
-    "dependencies": {
-        "protobufjs": "2.0.5"
-    },
-    "devDependencies": {
-        "mocha": "1.19.0",
-        "should": "3.3.1"
-    },
-    "licenses": [
-        {
-            "type": "Apache 2.0",
-            "url": "http://www.apache.org/licenses/LICENSE-2.0"
-        }
-    ]
+  "author": "Google Inc. -> Forked by Kyle Landell",
+  "name": "mta-gtfs-realtime-bindings",
+  "description": "Javascript classes generated from the GTFS-realtime protocol buffer specification.",
+  "tags": [
+    "gtfs-realtime",
+    "mta"
+  ],
+  "version": "0.0.5",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/klandell/mta-gtfs-realtime-bindings.git"
+  },
+  "bugs": {
+    "url": "https://github.com/klandell/mta-gtfs-realtime-bindings/issues"
+  },
+  "main": "mta-gtfs-realtime.js",
+  "scripts": {
+    "test": "mocha test/*.js",
+    "buildProto": "node_modules/protobufjs/bin/proto2js ./proto/nyct-subway.proto -commonjs > mta-gtfs-realtime.js"
+  },
+  "engines": [
+    "node >= 0.10.0"
+  ],
+  "dependencies": {
+    "protobufjs": "2.0.5"
+  },
+  "devDependencies": {
+    "mocha": "1.19.0",
+    "should": "3.3.1"
+  },
+  "licenses": [
+    {
+      "type": "Apache 2.0",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0"
+    }
+  ]
 }
